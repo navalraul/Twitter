@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        #screen {
+            width: 100%;
+            height: 700px;
+            /* border: 1px solid red; */
+            background-color: rgb(153,153,153);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main {
+            width: 48%;
+            height: 620px;
+            border-radius: 15px;
+            /* border: 1px solid yellow; */
+            background-color: white;
+        }
+        .img {
+            width: 100%;
+            height: 60px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img >img {
+            width: 7%;
+            height: 30px;
+            /* border: 1px solid red; */
+        }
+        .head {
+            width: 100%;
+            height: 70px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .head >h1 {
+            color: rgb(15,20,25);
+        }
+        .form {
+            width: 100%;
+            height: 250px;
+            /* border: 1px solid red; */
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .form >input {
+            width: 50%;
+            height: 40px;
+            margin-top: 5px;
+            outline: none;
+        }
+        .but {
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid red; */
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .but >button {
+            width: 50%;
+            height: 40px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: black;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        .text {
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text >p {
+            width: 50%;
+            font-size: 15px;
+            color: rgb(97, 93, 93);
+        }
+        .text >p >span {
+            color: rgb(68, 162, 225);
+            cursor: pointer;
+        }
+        .text2 {
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .text2 >p {
+            color:rgb(97, 93, 93) ;
+        }
+        .text2 >p >span {
+            color: rgb(60, 158, 224);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div class="main">
+            <div class="img">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png?20220821125553"/>
+            </div>
+            <div class="head">
+                <h1>Join Twitter today</h1>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Your Name here"/><br>
+                <input type="email" placeholder="Your Email here"/><br>
+                <input type="password" placeholder="Your Password here"/><br>
+                <input type="password" placeholder="Confirmpassword here"/><br>
+            </div>
+            <div class="but">
+                <button>Create Account</button>
+            </div>
+            <div class="text">
+                <p>By signing up, you agree to the<span> Terms of Service </span>  and <span>  Privacy Policy, </span>  including <span>  Cookie Use. </span>  </p>
+            </div>
+            <div class="text2">
+                <p>Have an account already?<span onclick="window.location.href = './TwitterLogin.html'"> Log in </span>  </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
