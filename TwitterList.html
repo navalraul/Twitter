@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
         *{
             font-family: sans-serif;
@@ -288,152 +287,139 @@
         .second {
             width: 40%;
             height: 2200px;
-            border: 1px solid gray;
+            border: 1px solid rgb(221, 217, 217);
         }
         .main {
             width: 100%;
-            height: 100px;
-            border-bottom: 1px solid rgb(173, 171, 171);
+            height: 50px;
+            /* border-bottom: 1px solid rgb(173, 171, 171); */
             /* border: 1px solid red; */
             background-color: white;
             position: sticky;
             top: 0px;
         }
-        .two {
-            width: 100%;
-            height: 50px;
-            /* border: 1px solid red; */
-            display: flex
-        }
-        .two >h3:hover {
-            cursor: pointer;
-            background-color:#d8d3d3;
-        }
-        .two >h4:hover {
-            cursor: pointer;
-            background-color: #d8d3d3;
-        }
-        .two >h4 {
-            width: 50%;
-            height: 50px;
-            /* border: 1px solid yellow; */
-            margin: 0px;
+        .head {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: lighter;
+            justify-content: space-between;
         }
-        .two >h3 {
-            width: 50%;
-            height: 50px;
-            /* border-bottom: 1px solid red; */
-            /* border: 1px solid yellow; */
-            margin: 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .twitt {
-            width: 100%;
-            height: 100px;
+        .head >i {
+            width: 5%;
             /* border: 1px solid red; */
-            margin-top: 10px;
-            display: flex;
+            border-radius: 10px;
+            margin: 18px 10px;
+            margin-top: 18px;
         }
-        .profile {
-            width: 15%;
-            height: 100px;
-            /* border: 1px solid red; */
-        }
-        .profile >img {
+        .search1 {
             width: 70%;
-            height: 60px;
-            border-radius: 25px;
+            height: 20px;
+            /* border: 1px solid  red; */
+            border-radius: 20px;
+            padding: 12px;
+            background-color: rgb(239,243,244);
         }
-        .post {
-            width: 100%;
-            /* border: 1px solid red; */
-        }
-        .post-in >input{
-            width: 50%;
-            height: 30px;
-            margin: 10px 10px 10px 0px;
+        .search1 >input {
+            width: 250px;
+            height: 20px;
             outline: none;
             border: none;
+            margin: 0px 10px;
+            font-size: 17px;
         }
-        .post-ic {
-            width: 40%;
-            /* justify-content: space-around; */
-            /* margin: 10px; */
-            /* border: 1px solid red; */
+        .mid {
+            width: 96%;
+            height: 130px;
+            border-bottom: 1px solid rgb(223, 220, 220);
+            padding: 10px;
         }
-        .post-ic >i {
-            margin: 5px;
-        }
-        .content {
-            width: 100%;
-            height: 640px;
-            border: 1px solid rgb(178, 176, 176);
-            margin-top: 15px;
-            display: flex;
-        }
-        .content:hover {
-            /* cursor: pointer; */
-            background-color: #ececec;
-        }
-        .pic {
-            width: 10%;
-            height: 100px;
-            /* border: 1px solid red; */
-        }
-        .pic >img {
-            margin-top: 10px;
-            width: 80%;
-            border-radius: 25px;
-        }
-        .pic-con{
+        .mid >p {
             width: 90%;
-            height: 600px;
+            /* border: 1px solid black; */
+            margin: 10px 25px;
+            color: #898787;
+        }
+        .mid-sec {
+            width: 100%;
+            height: 350px;
+            border-bottom: 1px solid rgb(223, 221, 221);
+        }
+        .mid-sec >h2 {
+            margin: 10px;
+        }
+        .mid-sec >p {
+            margin: 30px 15px;
+            color: rgb(10, 148, 240);
+            cursor: pointer;
+        }
+        .mid-main {
+            width: 100%;
+            height: 80px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .mid-main:hover {
+            cursor: pointer;
+            background-color: #eeecec;
+        }
+        .mid-img {
+            width: 10%;
             /* border: 1px solid black; */
         }
-        .pic-main >h4{
-            /* margin-top: 10px; */
-            margin: 10px 0px;
+        .mid-img >img{
+            width: 90%;
+            height: 50px;
+            border-radius: 10px;
+            /* border: 1px solid yellow; */
         }
-        .pic-sec >p{
-            margin-top: 5px;
+        .mid-rew {
+            width: 70%;
+            height: 50px;
+            /* border: 1px solid yellow; */
         }
-        .pic-th >h4 {
-            margin-top: -10px;
-            color: rgb(80, 175, 242);
+        .mid-rew >h4 {
+            margin: 0px;
         }
-        .pic-fo {
-            width: 80%;
+        .mid-rew >h4 >span {
+            font-size: 14px;
+            color: #837f7f;
         }
-        .pic-fo >img {
+        .mid-rew >p {
+            font-size: 14px;
+            color: #6e6b6b;
+        }
+        .mid-but {
+            width: 15%;
+            height: 50px;
+            /* background-color: #050505; */
+            /* border: 1px solid yellow; */
+        }
+        .mid-but >button {
             width: 100%;
-            height: 450px;
+            height: 40px;
+            background-color: #050505;
+            font-size: 15px;
+            color: white;
+            font-weight: bold;
             border-radius: 15px;
+        }
+        .mid-but >button:hover {
             cursor: pointer;
+            background-color: #242020;
         }
-        .review {
-            width: 80%;
-            height: 30px;
-            /* border: 1px solid red; */
-            margin-top: 10px;
-            display: flex;
-            justify-content: space-evenly;
+        .last {
+            width: 100%;
+            height: 200px;
+            /* border: 1px solid black; */
         }
-        .rev-comm {
-            width: 20%;
-            height: 20px;
-            /* border: 1px solid red; */
-            display: flex;
-            justify-content: space-evenly;
-            cursor: pointer;
+        .last >h2 {
+            margin: 15px;
         }
-        .rev-comm >p {
-            margin-top: 0px;
+        .last >p {
+            margin: 30px;
+            font-size: 15px;
+            color: #5e5c5c;
         }
         .third {
             width: 30%;
@@ -504,14 +490,6 @@
         .look2 >p {
             color: rgb(121, 183, 238);
         }
-        .all {
-            display: flex;
-        }
-        .all >img{
-            width: 10%;
-            height: 40px;
-            margin: 15px;
-        }
     </style>
 </head>
 <body>
@@ -567,17 +545,62 @@
         <div class="second">
             <div class="main">
                 <div class="head">
-                    <h2>Notifications</h2>
-                </div>
-                <div class="two">
-                    <h3>All</h3>
-                    <h4>Verified</h4>
-                    <h4>Mentions</h4>
+                    <i class="fa-solid fa-arrow-left fa-lg" style="color: #0f0f0f;"></i>
+                    <div class="search1">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass fa-lg" style="color: #403f3f;"></i>
+                        <input type="text" placeholder="Search Lists"/>
+                    </div>
+                    <i class="fa-solid fa-calendar-days fa-lg" style="color: #2c2d30;"></i>
+                    <i class="fa-solid fa-ellipsis fa-lg"></i>
                 </div>
             </div>
-            <div class="all">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png?20220821125553"/>
-                <p>There was a login to your account @Raul96Naval from a new device on Jun 21, 2023. Review it now.</p>
+            <div class="mid">
+                <h2>Pinned Lists</h2>
+                <p>Nothing to see here yet — pin your favorite Lists to access them quickly.</p>
+            </div>
+            <div class="mid-sec">
+                <h2>Discover new Lists</h2>
+                <div class="mid-main">
+                    <div class="mid-img">
+                        <img src="https://pbs.twimg.com/media/EXZ2w_qUcAMwN3x?format=png&name=240x240"/>
+                    </div>
+                    <div class="mid-rew">
+                        <h4>DEFENCE <span>.69 members</span></h4>
+                        <p>4.1K followers including @kikuhonda25</p>
+                    </div>
+                    <div class="mid-but">
+                        <button>Follow</button>
+                    </div>
+                </div>
+                <div class="mid-main">
+                    <div class="mid-img">
+                        <img src="https://pbs.twimg.com/media/EXZ22fjU8AAau2G?format=png&name=240x240"/>
+                    </div>
+                    <div class="mid-rew">
+                        <h4>My-Gov <span>.137 members</span></h4>
+                        <p>16.5K followers including @AmitThakerBJP</p>
+                    </div>
+                    <div class="mid-but">
+                        <button>Follow</button>
+                    </div>
+                </div>
+                <div class="mid-main">
+                    <div class="mid-img">
+                        <img src="https://pbs.twimg.com/media/EXZ2w_qUcAMwN3x?format=png&name=240x240"/>
+                    </div>
+                    <div class="mid-rew">
+                        <h4>MLA MH <span>.69 members</span></h4>
+                        <p>1.6K followers including @varun25</p>
+                    </div>
+                    <div class="mid-but">
+                        <button>Follow</button>
+                    </div>
+                </div>
+                <p>Show More</p>
+            </div>
+            <div class="last">
+                <h2>Your Lists</h2>
+                <p>You haven't created or followed any Lists. When you do, they'll show up here.</p>
             </div>
         </div>
         <div class="third">
