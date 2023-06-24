@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/1187491213.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        #screen {
+            width: 100%;
+            /* height: 700px; */
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .first {
+            width: 23%;
+            height: 800px;
+            /* border: 1px solid black; */
+            position: sticky;
+            top: 0px;
+        }
+        /* .logo {
+            width: 50%;
+            height: 100px;
+            border-radius: 50px;
+            border: 1px solid red;
+        } */
+        .logo >img {
+            width: 15%;
+            margin: 10px 0px 10px 30px;
+            /* border: 1px solid red; */
+            border-radius: 10px;
+        }
+        .logo >img:hover {
+            cursor: pointer;
+            background-color: rgb(226, 221, 221);
+        }
+        .same {
+            width: 60%;
+            height: 50px;
+            margin-left: 40px;
+            margin-top: 15px;
+            display: flex;
+        }
+        .same:hover {
+            cursor: pointer;
+            background-color: rgb(228, 225, 225);
+            border-radius: 20px;
+        }
+        .same >i {
+            padding: 12px;
+            margin: 10px 0px ;
+        }
+        .same >h3 {
+            font-size: 22px;
+            margin: 10px;
+            color: rgb(52, 50, 50);
+        }
+        .exp {
+            width: 60%;
+            height: 50px;
+            margin-left: 40px;
+            margin-top: 15px;
+            display: flex;
+        }
+        .exp:hover {
+            width: 70%;
+            cursor: pointer;
+            background-color: rgb(228, 225, 225);
+            border-radius: 20px;
+        }
+        .exp >i {
+            padding: 12px;
+            margin: 10px 0px;
+        }
+        .exp >h3 {
+            font-size: 22px;
+            margin: 10px;
+            color: rgb(52, 50, 50);
+            font-weight: lighter;
+        }
+        .not {
+            width: 60%;
+            height: 50px;
+            margin-left: 40px;
+            margin-top: 15px;
+            display: flex;
+        }
+        .not:hover {
+            width: 75%;
+            cursor: pointer;
+            background-color: rgb(228, 225, 225);
+            border-radius: 20px;
+        }
+        .not >i {
+            padding: 12px;
+            margin: 10px 0px;
+        }
+        .not >h3 {
+            font-size: 22px;
+            margin: 10px;
+            font-weight: lighter;
+            color: rgb(52, 50, 50);;
+        }
+        .mess {
+            width: 60%;
+            height: 50px;
+            margin-left: 40px;
+            margin-top: 15px;
+            display: flex;
+        }
+        .mess:hover {
+            cursor: pointer;
+            background-color: rgb(228, 225, 225);
+            border-radius: 20px;
+        }
+        .mess >i {
+            padding: 12px;
+            margin: 10px 0px;
+        }
+        .mess >h3 {
+            font-size: 22px;
+            margin: 10px;
+            color: rgb(52, 50, 50);
+            font-weight: lighter;
+        }
+        .list {
+            width: 60%;
+            height: 50px;
+            margin-left: 40px;
+            margin-top: 15px;
+            display: flex;
+        }
+        .list:hover {
+            width: 45%;
+            cursor: pointer;
+            background-color: rgb(228, 225, 225);
+            border-radius: 20px;
+        }
+        .list >i {
+            padding: 12px;
+            margin: 10px 0px;
+        }
+        .list >h3 {
+            font-size: 22px;
+            margin: 10px;
+            color: rgb(52, 50, 50);
+            font-weight: lighter;
+        }
+        .book {
+            width: 60%;
+            height: 50px;
+            margin-left: 40px;
+            margin-top: 15px;
+            display: flex;
+        }
+        .book:hover {
+            width: 70%;
+            cursor: pointer;
+            background-color: rgb(228, 225, 225);
+            border-radius: 20px;
+        }
+        .book >i {
+            padding: 12px;
+            margin: 10px 0px;
+        }
+        .book >h3 {
+            font-size: 22px;
+            margin: 10px;
+            color: rgb(52, 50, 50);
+            font-weight: lighter;
+        }
+        .ver {
+            width: 60%;
+            height: 50px;
+            margin-left: 40px;
+            margin-top: 15px;
+            display: flex;
+        }
+        .ver:hover {
+            width: 70%;
+            cursor: pointer;
+            background-color: rgb(228, 225, 225);
+            border-radius: 20px;
+        }
+        .ver >i {
+            padding: 12px;
+            margin: 10px 0px;
+        }
+        .ver >h3 {
+            font-size: 22px;
+            margin: 10px;
+            color: rgb(52, 50, 50);
+            font-weight: lighter;
+        }
+        .pro {
+            width: 60%;
+            height: 50px;
+            margin-left: 40px;
+            margin-top: 15px;
+            display: flex;
+        }
+        .pro:hover {
+            cursor: pointer;
+            background-color: rgb(228, 225, 225);
+            border-radius: 20px;
+        }
+        .pro >i {
+            padding: 12px;
+            margin: 10px 0px;
+        }
+        .pro >h3 {
+            font-size: 22px;
+            margin: 10px;
+            color: rgb(52, 50, 50);
+            font-weight: lighter;
+        }
+        .more {
+            width: 60%;
+            height: 50px;
+            margin-left: 40px;
+            margin-top: 15px;
+            display: flex;
+        }
+        .more:hover {
+            width: 50%;
+            cursor: pointer;
+            background-color: rgb(228, 225, 225);
+            border-radius: 20px;
+        }
+        .more >i {
+            padding: 12px;
+            margin: 10px 0px;
+        }
+        .more >h3 {
+            font-size: 22px;
+            margin: 10px;
+            color: rgb(52, 50, 50);
+            font-weight: lighter;
+        }
+        .twe {
+            width: 80%;
+            height: 50px;
+            /* border: 1px solid red; */
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+        .twe >button {
+            width: 100%;
+            height: 50px;
+            border-radius: 20px;
+            background-color: rgb(29,155,240);
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+        .twe >button:hover {
+            cursor: pointer;
+            background-color: rgb(10, 148, 240);
+        }
+        .nam {
+            width: 70%;
+            height: 50px;
+            /* border: 1px solid red; */
+            margin-top: 20px;
+            margin-left: 40px;
+            display: flex;
+        }
+        .nam:hover {
+            width: 80%;
+            cursor: pointer;
+            background-color: rgb(228, 225, 225);
+            border-radius: 20px;
+        }
+        .nam >img{
+            width: 30%;
+            height: 50px;
+            border-radius: 20px;
+            margin: 0px 10px;
+            /* display: flex; */
+        }
+        .second {
+            width: 40%;
+            height: 2200px;
+            border: 1px solid gray;
+        }
+        .third {
+            width: 30%;
+            height: 500px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div class="first">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png?20220821125553"/>
+            </div>
+            <div class="same" onclick="window.location.href='./TwitterHome.html'">
+                <i class="fa-solid fa-house fa-xl" style="color: #0c0d0d;"></i>
+                <h3>Home</h3>
+            </div>
+            <div class="exp">
+                <i class="fa-sharp fa-solid fa-magnifying-glass fa-xl" style="color: #121212;"></i>
+                <h3>Explore</h3>
+            </div>
+            <div class="not" onclick="window.location.href='./TwitterNotification.html'">
+                <i class="fa-sharp fa-regular fa-bell fa-xl" style="color: #0d0d0d;"></i>
+                <h3>Notifications</h3>
+            </div>
+            <div class="mess" onclick="window.location.href='./TwitterMessage.html'">
+                <i class="fa-sharp fa-regular fa-envelope fa-xl" style="color: #161718;"></i>
+                <h3>Message</h3>
+            </div>
+            <div class="list">
+                <i class="fa-sharp fa-regular fa-rectangle-list fa-xl" style="color: #141414;"></i>
+                <h3>Lists</h3>
+            </div>
+            <div class="book">
+                <i class="fa-regular fa-bookmark fa-xl" style="color: #141415;"></i>
+                <h3>Bookmarks</h3>
+            </div>
+            <div class="ver">
+                <i class="fa-solid fa-square-check fa-xl" style="color: #343535;"></i>
+                <h3>Verification</h3>
+            </div>
+            <div class="pro">
+                <i class="fa-regular fa-user fa-xl" style="color: #0f0f0f;"></i>
+                <h3>Profile</h3>
+            </div>
+            <div class="more">
+                <i class="fa-solid fa-bars fa-xl" style="color: #050505;"></i>
+                <h3>More</h3>
+            </div>
+            <div class="twe">
+                <button> Tweet</button>
+            </div>
+            <div class="nam">
+                <img src="https://scontent.fbom3-1.fna.fbcdn.net/v/t1.6435-9/29366492_1272022789596214_7497308715922489344_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=9VpYcjSv1JcAX89Sher&_nc_ht=scontent.fbom3-1.fna&oh=00_AfDTUZOgg7hOy3OUpZdcJFhmg6A-Loj7HSxFp1N4N8UyTQ&oe=64BAF2F7"/>
+                <h3>Naval Raul</h3>
+            </div>
+        </div>
+        <div class="second">2</div>
+        <div class="third">3</div>
+</body>
+</html>
