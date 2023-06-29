@@ -243,6 +243,49 @@
             color: rgb(52, 50, 50);
             font-weight: lighter;
         }
+        .more-sub {
+            width: 250px;
+            /* height: 220px; */
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid rgb(207, 204, 204);
+            padding: 10px;
+            bottom: 120px;
+            left: 50px;
+            border-radius: 10px;
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height 0.5s;
+            /* top: 100px; */
+        }
+        .more-sub.open-menu {
+            max-height: 220px;
+        }
+        .more-sub-fi {
+            width: 100%;
+            /* height: 100px; */
+            /* border: 1px solid black; */
+            margin: 0px;
+        }
+        .more-sub-fi >h2 {
+            margin-top: 0px;
+        }
+        .more-sub-se {
+            width: 100%;
+            /* height: 120px; */
+            /* border: 1px solid red; */
+        }
+        .more-sub-fi >h2:hover {
+            /* height: 35px; */
+            background-color: #edecec;
+        }
+        .more-sub-se >h4 {
+            color: #403f3f;
+        }
+        .more-sub-se >h4:hover {
+            /* height: 20px; */
+            background-color: #edecec;
+        }
         .twe {
             width: 80%;
             height: 50px;
@@ -485,9 +528,20 @@
                 <i class="fa-regular fa-user fa-xl" style="color: #0f0f0f;"></i>
                 <h3>Profile</h3>
             </div>
-            <div class="more">
+            <div class="more" onclick="toggleMenu()">
                 <i class="fa-solid fa-bars fa-xl" style="color: #050505;"></i>
                 <h3>More</h3>
+                <div class="more-sub" id="subMenu">
+                    <div class="more-sub-fi">
+                        <h2 onclick="window.location.href='./TwitterConnect.html'">Connect</h2>
+                        <h2 onclick="window.location.href='./TwitterDrafts.html'">Drafts</h2>
+                    </div>
+                    <div class="more-sub-se">
+                        <h4>Creator Studio</h4>
+                        <h4>Professional Tools</h4>
+                        <h4>Settings & Support</h4>
+                    </div>
+                </div>
             </div>
             <div class="twe">
                 <button> Tweet</button>
@@ -648,5 +702,17 @@
             </div>
         </div>
     </div>
+
+
+
+
+<script>
+
+    let subMenu = document.getElementById("subMenu")
+
+    function toggleMenu() {
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
 </body>
 </html>
