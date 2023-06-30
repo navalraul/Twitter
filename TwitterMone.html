@@ -366,20 +366,64 @@
         .main {
             width: 90%;
             height: 20px;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             padding: 15px;
+            margin: 5px;
+        }
+        .main >h2 {
+            margin: -5px;
+            color: #222424;
         }
         .main-sec {
             width: 90%;
-            height: 20px;
-            border: 1px solid red;
-            padding: 15px;
-            margin: 8px;
+            height: 45px;
+            /* border: 1px solid red; */
+            padding: 12px;
+            margin: 5px;
+        }
+        .main-sec >button {
+            width: 103%;
+            height: 50px;
+            margin: -5px;
+            border: 1px solid rgb(203, 202, 202);
+            border-radius: 25px;
+            font-size: 17px;
+            color: #747070;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .main-sec >button >i {
+            margin-right: 15px;
         }
         .main-th {
             width: 90%;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             padding: 15px;
+            margin: 5px;
+        }
+        .main-th-fi {
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid yellow; */
+            display: flex;
+            justify-content: space-around;
+        }
+        .main-th-fi:hover {
+            cursor: pointer;
+            background-color: #f5f4f4;
+        }
+        .main-th-fi >p {
+            width: 90%;
+            height: 50px;
+            color: #6a6868;
+            /* border: 1px solid yellow; */
+            /* margin: 0px; */
+        }
+        .main-th-fi >i {
+            width: 5%;
+            height: 30px;
+            /* border: 1px solid red; */
+            margin: 15px 0px;
         }
         .third {
             width: 43%;
@@ -496,9 +540,50 @@
             </div>
         </div>
         <div class="second">
-            <div class="main">1</div>
-            <div class="main-sec">1</div>
-            <div class="main-th">2</div>
+            <div class="main">
+                <h2>Settings</h2>
+            </div>
+            <div class="main-sec">
+                <button><i class="fa-sharp fa-solid fa-magnifying-glass"></i>Search Settings</button>
+            </div>
+            <div class="main-th">
+                <div class="main-th-fi">
+                    <p>Your account</p>
+                    <i class="fa-solid fa-angle-right" style="color: #616161;"></i>
+                </div>
+                <div class="main-th-fi">
+                    <p>Monetization</p>
+                    <i class="fa-solid fa-angle-right" style="color: #616161;"></i>
+                </div>
+                <div class="main-th-fi">
+                    <p>Twitter Blue</p>
+                    <i class="fa-solid fa-angle-right" style="color: #616161;"></i>
+                </div>
+                <div class="main-th-fi">
+                    <p>Subscriptions</p>
+                    <i class="fa-solid fa-angle-right" style="color: #616161;"></i>
+                </div>
+                <div class="main-th-fi">
+                    <p>Security and account access</p>
+                    <i class="fa-solid fa-angle-right" style="color: #616161;"></i>
+                </div>
+                <div class="main-th-fi">
+                    <p>Privacy and safety</p>
+                    <i class="fa-solid fa-angle-right" style="color: #616161;"></i>
+                </div>
+                <div class="main-th-fi">
+                    <p>Notifications</p>
+                    <i class="fa-solid fa-angle-right" style="color: #616161;"></i>
+                </div>
+                <div class="main-th-fi">
+                    <p>Accessibility, display, and languages</p>
+                    <i class="fa-solid fa-angle-right" style="color: #616161;"></i>
+                </div>
+                <div class="main-th-fi">
+                    <p>Additional resources</p>
+                    <i class="fa-solid fa-angle-right" style="color: #616161;"></i>
+                </div>
+            </div>
         </div>
         <div class="third">
             <div class="third-fi">
