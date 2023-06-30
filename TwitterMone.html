@@ -14,7 +14,7 @@
             /* height: 700px; */
             /* border: 1px solid black; */
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
         .first {
             width: 23%;
@@ -359,164 +359,73 @@
             /* display: flex; */
         }
         .second {
-            width: 45%;
-            height: 1200px;
-            border: 1px solid rgb(202, 201, 201);
+            width: 30%;
+            height: 700px;
+            border: 1px solid rgb(233, 233, 233);
         }
         .main {
-            width: 100%;
-            height: 50px;
-            border-bottom: 1px solid rgb(212, 210, 210);
+            width: 90%;
+            height: 20px;
+            border: 1px solid red;
+            padding: 15px;
+        }
+        .main-sec {
+            width: 90%;
+            height: 20px;
+            border: 1px solid red;
+            padding: 15px;
+            margin: 8px;
+        }
+        .main-th {
+            width: 90%;
+            border: 1px solid red;
+            padding: 15px;
+        }
+        .third {
+            width: 43%;
+            height: 700px;
+            /* border: 1px solid black; */
+            margin: 0px 10px;
+        }
+        .third-fi {
+            width: 95%;
+            height: 20px;
             /* border: 1px solid red; */
-            background-color: white;
-            position: sticky;
-            top: 0px;
+            padding: 15px ;
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
-        .main >i {
-            /* border: 1px solid black; */
-            padding: 10px;
-            margin-top: 15px;
+        .third-fi >h2 {
+            color: #1a1b1b;
         }
-        .main >h2 {
-            width: 90%;
-            height: 50px;
-            /* border: 1px solid red; */
-            margin-top: 10px;
-        }
-        .sub-main {
-            width: 97%;
-            height: 95px;
-            /* border: 1px solid red; */
-            padding: 10px;
+        .third-sec {
+            width: 95%;
+            height: 120px;
             display: flex;
-            /* margin: 10px; */
+            justify-content: space-evenly;
+            /* border: 1px solid red; */
+            box-shadow: 2px 2px 10px 1px rgb(203, 202, 202);
+            margin-top: 20px;
+            margin-left: 15px;
+            border-radius: 10px;
         }
-        .sub-main:hover{
+        .third-sec:hover {
             cursor: pointer;
             background-color: #eeeded;
         }
-        .sub-main-one {
-            width: 10%;
-            /* border: 1px solid yellow; */
-        }
-        .sub-main-one >img {
-            width: 70%;
-            border-radius: 25px;
-        }
-        .sub-main-two {
+        .third-sec-fi {
             width: 80%;
-            height: 100px;
-            /* border: 1px solid black; */
+            /* border: 1px solid yellow; */
+            margin: 20px;
         }
-        .sub-main-two >h3 {
-            margin: 0px;
-            color: #343535;
-        }
-        .sub-main-two >p {
-            margin-top: 2px;
-            margin-bottom: 10px;
-            color: #787474;
-        }
-        .sub-main-two >span {
-            color: #515050;
-        }
-        .sub-main-th {
-            width: 13%;
+        .third-sec-se {
+            width: 15%;
             /* border: 1px solid red; */
         }
-        .sub-main-th >button {
+        .third-sec-se >img{
+            /* border: 1px solid red; */
             width: 100%;
-            height: 40px;
-            border-radius: 25px;
-            border: none;
-            font-size: 15px;
-            font-weight: bold;
-            color: #ffff;
-            background-color: #050505;
-
-        }
-        .sub-main-th >button:hover {
-            cursor: pointer;
-            background-color: #151414;
-        }
-        .third {
-            width: 30%;
-            height: 700px;
-            /* border: 1px solid black; */
-            position: sticky;
-            top: 0px;
-        }
-        .search {
-            width: 70%;
-            height: 20px;
-            /* border: 1px solid  red; */
-            border-radius: 20px;
-            padding: 12px;
-            background-color: rgb(239,243,244);
-        }
-        .search >input {
-            width: 250px;
-            height: 20px;
-            outline: none;
-            border: none;
-            margin: 0px 10px;
-            font-size: 17px;
-        }
-        .what {
-            width: 90%;
-            height: 480px;
-            /* border: 1px solid red; */
-            /* border-bottom-left-radius: 10px; */
-            margin-top: 25px;
-            /* padding: 10px; */
-            /* margin-left: 10px; */
-            border-radius: 10px;
-            background-color: rgb(247,249,249);
-        }
-        .title {
-            margin-left: 15px;
-        }
-        .look {
-            margin-top: 20px;
-            width: 96%;
-            height: 70px;
-            /* border: 1px solid red; */
-            margin-left: 15px;
-        }
-        .look:hover {
-            cursor: pointer;
-            background-color: rgb(236, 234, 234);
-        }
-        .look >p {
-            margin: 0px;
-        }
-        .look >h3 {
-            margin: 5px 0px;
-        }
-        .look2 {
-            width: 94%;
-            height: 47px;
-            /* border: 1px solid red; */
-            border-radius: 10px;
-            padding: 12px;
-        }
-        .look2:hover {
-            border-radius: 10px;
-            cursor: pointer;
-            background-color: rgb(236, 234, 234);
-        }
-        .look2 >p {
-            color: rgb(121, 183, 238);
-        }
-        .all {
-            display: flex;
-        }
-        .all >img{
-            width: 10%;
-            height: 40px;
-            margin: 15px;
         }
     </style>
 </head>
@@ -587,152 +496,23 @@
             </div>
         </div>
         <div class="second">
-            <div class="main">
-                <i class="fa-solid fa-arrow-left fa-lg"></i>
-                <h2>Connect</h2>
-            </div>
-            <h2>Suggested for you</h2>
-            <div class="sub-main">
-                <div class="sub-main-one">
-                    <img src="https://pbs.twimg.com/profile_images/1559752542372122624/6UiH4Ubt_400x400.jpg"/>
-                </div>
-                <div class="sub-main-two">
-                    <h3>RVCJ Media</h3>
-                    <p>@ RVCJ_FB</p>
-                    <span>India's Largest Digital Publisher. Official Handle of RVCJ Digital Media Private Ltd. Business Enquiry:- contact@rvcj.com</span>
-                </div>
-                <div class="sub-main-th">
-                    <button>Follow</button>
-                </div>
-            </div>
-            <div class="sub-main">
-                <div class="sub-main-one">
-                    <img src="https://pbs.twimg.com/profile_images/1531787315852492800/f9XuxbM5_400x400.jpg"/>
-                </div>
-                <div class="sub-main-two">
-                    <h3>cats with jobs</h3>
-                    <p>@CatWorkers</p>
-                    <span>no choice on blue • good cats being workers • unionized. • mascot 
-                        @JobertTheCat
-                        . Pins/stickers available for pre-order! Business: translatedcats@gmail.com</span>
-                </div>
-                <div class="sub-main-th">
-                    <button>Follow</button>
-                </div>
-            </div>
-            <div class="sub-main">
-                <div class="sub-main-one">
-                    <img src="https://pbs.twimg.com/profile_images/1641475818806460416/eAh4BHTV_400x400.jpg"/>
-                </div>
-                <div class="sub-main-two">
-                    <h3>Kapil Sharma</h3>
-                    <p>@KapilSharmaK9</p>
-                    <span>Actor, who loves to make ppl laugh 🤗</span>
-                </div>
-                <div class="sub-main-th">
-                    <button>Follow</button>
-                </div>
-            </div>
-            <div class="sub-main">
-                <div class="sub-main-one">
-                    <img src="https://pbs.twimg.com/profile_images/1571735535579959296/rcBs_weI_400x400.jpg"/>
-                </div>
-                <div class="sub-main-two">
-                    <h3>Parineeti Chopra</h3>
-                    <p>@ParineetiChopra</p>
-                    <span>Wandering Hedonist 🌟🌈 Instagram - 
-                        @Parineetichopra
-                        .</span>
-                </div>
-                <div class="sub-main-th">
-                    <button>Follow</button>
-                </div>
-            </div>
-            <div class="sub-main">
-                <div class="sub-main-one">
-                    <img src="https://pbs.twimg.com/profile_images/1630634053039792129/Y3rtDRqG_400x400.jpg"/>
-                </div>
-                <div class="sub-main-two">
-                    <h3>Priyanka</h3>
-                    <p>@priyankachopra</p>
-                    <span>Dreamer.. Achiever..</span>
-                </div>
-                <div class="sub-main-th">
-                    <button>Follow</button>
-                </div>
-            </div>
-            <div class="sub-main">
-                <div class="sub-main-one">
-                    <img src="https://pbs.twimg.com/profile_images/1640305056896651265/I2mQZzaq_400x400.jpg"/>
-                </div>
-                <div class="sub-main-two">
-                    <h3>
-                        Eknath Shinde - एकनाथ शिंदे</h3>
-                    <p>@mieknathshinde</p>
-                    <span>Chief Minister, Maharashtra State</span>
-                </div>
-                <div class="sub-main-th">
-                    <button>Follow</button>
-                </div>
-            </div>
-            <div class="sub-main">
-                <div class="sub-main-one">
-                    <img src="https://pbs.twimg.com/profile_images/1660163643202232321/wuil1k2n_400x400.jpg"/>
-                </div>
-                <div class="sub-main-two">
-                    <h3>Anupam Kher</h3>
-                    <p>@AnupamPKher</p>
-                    <span>Actor/Teacher/MotivationalSpeaker/UN Ambassador @HeForShe/Author/Padma Shri/PadmaBhushan</span>
-                </div>
-                <div class="sub-main-th">
-                    <button>Follow</button>
-                </div>
-            </div>
-            <div class="sub-main">
-                <div class="sub-main-one">
-                    <img src="https://pbs.twimg.com/profile_images/1500167316218146819/f33NaqFS_400x400.jpg"/>
-                </div>
-                <div class="sub-main-two">
-                    <h3>The Bharat Army</h3>
-                    <p>@thebharatarmy</p>
-                    <span>𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 𝗧𝗲𝗮𝗺 𝗜𝗻𝗱𝗶𝗮 𝗦𝘂𝗽𝗽𝗼𝗿𝘁𝗲𝗿𝘀 𝗚𝗿𝗼𝘂𝗽 • Register and become an official Bharat Army member today: http://bafan.co/join</span>
-                </div>
-                <div class="sub-main-th">
-                    <button>Follow</button>
-                </div>
-            </div>
+            <div class="main">1</div>
+            <div class="main-sec">1</div>
+            <div class="main-th">2</div>
         </div>
         <div class="third">
-            <div class="search">
-                <i class="fa-sharp fa-solid fa-magnifying-glass fa-lg" style="color: #403f3f;"></i>
-                <input type="text" placeholder="Search Twitter"/>
+            <div class="third-fi">
+                <h2>Monetization</h2>
+                <i class="fa-solid fa-circle-info fa-xl" style="color: #424448;"></i>
             </div>
-            <div class="what">
-                <div class="title">
-                    <h2>What’s happening</h2>
+            <div class="third-sec">
+                <div class="third-sec-fi">
+                    <i class="fa-solid fa-user-plus" style="color: #ef50f2;"></i>
+                    <span>Subscriptions</span>
+                    <h3>Bonus content for your most engaged followers</h3>
                 </div>
-                <div class="look">
-                    <p>Entertainment · Trending</p>
-                    <h3>#LeoFirstLook</h3>
-                    <p>Trending with</p>
-                </div>
-                <div class="look">
-                    <p>Trending in India</p>
-                    <h3>#submarinemissing</h3>
-                    <p>10.1K Tweets</p>
-                </div>
-                <div class="look">
-                    <p>Trending in India</p>
-                    <h3>#HoneySingh</h3>
-                    <p>20K Tweets</p>
-                </div>
-                <div class="look">
-                    <p>Trending in India</p>
-                    <h3>The King</h3>
-                    <p>286K Tweets</p>
-                </div>
-                <div class="look2">
-                    <p>Show More</p>
+                <div class="third-sec-se">
+                    <img src="https://abs.twimg.com/responsive-web/client-web/Crown.65bc0d5a.png"/>
                 </div>
             </div>
         </div>
